@@ -9,9 +9,9 @@ build:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-python@v4
-            with:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+        with:
             python-version: 3.9
     - name: run requirements file
         run:  pip install -r requirements.txt 
